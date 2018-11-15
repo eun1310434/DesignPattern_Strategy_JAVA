@@ -1,6 +1,6 @@
 /*==================================================================================================
 ¡à INFORMATION
-  ¡Û Data : Thursday - 14/06/18
+  ¡Û Data : Thursday - 15/11/18
   ¡Û Mail : eun1310434@naver.com
   ¡Û WebPage : https://eun1310434.github.io/
   ¡Û Reference
@@ -28,8 +28,8 @@
    ¡Û Negative : Increased Number of Objects / Classes
 ==================================================================================================*/
 package com.eun1310434.designpattern.strategy;
-
 //Class used if the Animal can fly
+
 class ItFlys implements Flys{
 	public String fly() {return "Flying High";}
 }

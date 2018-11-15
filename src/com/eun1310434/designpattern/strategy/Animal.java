@@ -1,10 +1,10 @@
 /*==================================================================================================
 ¡à INFORMATION
-  ¡Û Data : Thursday - 14/06/18
+  ¡Û Data : Thursday - 15/11/18
   ¡Û Mail : eun1310434@naver.com
   ¡Û WebPage : https://eun1310434.github.io/
   ¡Û Reference
-     - http://www.newthinktank.com/2012/08/strategy-design-pattern-tutorial/        
+     - http://www.newthinktank.com/2012/08/strategy-design-pattern-tutorial/ 
         
 ¡à Study
    ¡Û Strategy
@@ -34,11 +34,10 @@ public class Animal {
 	private String name;
 	
 	// Instead of using an interface in a traditional way
-	// we use an instance variable that is a subclass
-	// of the Flys interface.
+	// we use an instance variable that is a subclass of the Flys interface.
 	
-	// Animal doesn't care what flyingType does, it just
-	// knows the behavior is available to its subclasses
+	// Animal doesn't care what flyingType does, 
+	// it just knows the behavior is available to its subclasses
 	
 	// This is known as Composition : Instead of inheriting
 	// an ability through inheritance the class is composed
@@ -51,22 +50,10 @@ public class Animal {
 	public void setName(String newName){ name = newName; }
 	public String getName(){ return name; }
 	
-	
-	/* BAD
-	* You don't want to add methods to the super class.
-	* You need to separate what is different between subclasses
-	* and the super class
-	public void fly(){
-		
-		System.out.println("I'm flying");
-		
-	}
-	*/
-	
-	// Animal pushes off the responsibility for flying to flyingType
 	public String tryToFly(){ return flyingType.fly();}
+	// Animal pushes off the responsibility for flying to flyingType
 	
-	// If you want to be able to change the flyingType dynamically add the following method
 	public void setFlyingAbility(Flys _flyType){flyingType = _flyType;}
+	// If you want to be able to change the flyingType dynamically add the following method
 	
 }

@@ -1,10 +1,10 @@
 /*==================================================================================================
 ¡à INFORMATION
-  ¡Û Data : Thursday - 14/06/18
+  ¡Û Data : Thursday - 15/11/18
   ¡Û Mail : eun1310434@naver.com
   ¡Û WebPage : https://eun1310434.github.io/
   ¡Û Reference
-     - http://www.newthinktank.com/2012/08/strategy-design-pattern-tutorial/        
+     - http://www.newthinktank.com/2012/08/strategy-design-pattern-tutorial/  
         
 ¡à Study
    ¡Û Strategy
@@ -31,12 +31,13 @@ package com.eun1310434.designpattern.strategy;
 
 public class Bird extends Animal{
 	
-	// The constructor initializes all objects
 	public Bird(){
 		super();
+		// The constructor initializes all objects
+		
+		setFlyingAbility(new ItFlys());
 		// We set the Flys interface polymorphically
 		// This sets the behavior as a non-flying Animal
-		setFlyingAbility(new ItFlys());
 	}
 	
 }

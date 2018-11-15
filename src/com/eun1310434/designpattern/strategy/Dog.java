@@ -1,6 +1,6 @@
 /*==================================================================================================
 ¡à INFORMATION
-  ¡Û Data : Thursday - 14/06/18
+  ¡Û Data : Thursday - 15/11/18
   ¡Û Mail : eun1310434@naver.com
   ¡Û WebPage : https://eun1310434.github.io/
   ¡Û Reference
@@ -33,19 +33,10 @@ public class Dog extends Animal{
 	
 	public Dog(){
 		super();
+		// The constructor initializes all objects
+		
+		setFlyingAbility(new CantFly());
 		// We set the Flys interface polymorphically
 		// This sets the behavior as a non-flying Animal
-		setFlyingAbility(new CantFly());
 	}
-
-	public void digHole(){System.out.println("Dug a hole");}
-	
-	/* BAD
-	* You could override the fly method, but we are breaking
-	* the rule that we need to abstract what is different to the subclasses
-	public void fly(){
-		System.out.println("I can't fly");
-	}
-	*/
-
 }

@@ -1,10 +1,10 @@
 /*==================================================================================================
 ¡à INFORMATION
-  ¡Û Data : Thursday - 14/06/18
+  ¡Û Data : Thursday - 15/11/18
   ¡Û Mail : eun1310434@naver.com
   ¡Û WebPage : https://eun1310434.github.io/
   ¡Û Reference
-     - http://www.newthinktank.com/2012/08/strategy-design-pattern-tutorial/        
+     - http://www.newthinktank.com/2012/08/strategy-design-pattern-tutorial/    
         
 ¡à Study
    ¡Û Strategy

@@ -41,7 +41,8 @@ public class Animal {
 	
 	// This is known as Composition : Instead of inheriting
 	// an ability through inheritance the class is composed
-	// with Objects with the right ability
+	// with Objects with the right ability  
+	//ddasfd
 	
 	// Composition allows you to change the capabilities of 
 	// objects at run time!
